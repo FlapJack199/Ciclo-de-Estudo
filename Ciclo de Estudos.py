@@ -1,6 +1,12 @@
-print('CRIADOR DE CICLO DE ESTUDO')
-mt = ['português','matemática','história','geografia','biologia','química','física']
+mt = []
 df = []
+print('CRIADOR DE CICLO DE ESTUDO')
+while True:
+  x = input('Quais matérias deseja adicionar (Digite "Continuar" quando finalizar):')
+  if x.lower().strip() == 'continuar':
+    break
+  else:
+    mt.append(x)
 hd = int(input('Diga uma quantidade de horas ideal para estudar por dia:'))
 for i in mt:
   x = int(input(f'Qual é sua dificuldade em {i}?(de 1 a 5):'))
